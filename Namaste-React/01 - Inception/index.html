@@ -8,11 +8,30 @@
 <body>
     <div id = 'root'></div>
 
-    <script>
-        const root = document.getElementById('root');
-        const heading = document.createElement('h1');
-        heading.innerText = 'Hello Javascript !';
-        root.appendChild(heading)
+    <!-- adding CDN links 
+    After adding CDN links we are enabling the React functionality in the normal project !
+    -->
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./App.js">
+        // javascript approch to render code.
+
+        // const root = document.getElementById('root');
+        // const heading = document.createElement('h1');
+        // heading.innerText = 'Hello Javascript !';
+        // root.appendChild(heading)
+
+        // React way 
+
+        // const h1 = React.createElement('h1', {} , 'Hi, this is from React CDN !' )
+        // const root = ReactDOM.createRoot(document.getElementById('root'));
+        // root.render(h1);
+
+        // creating separate file for JS
+        
+
+        
     </script>
 </body>
 </html>
