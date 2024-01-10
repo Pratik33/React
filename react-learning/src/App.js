@@ -7,6 +7,9 @@ import { ChannelContextProvider } from './Context/ChannelContext';
 import { UserProvider } from './Context/UserContext'
 import UseReducer from './Components/UseReducerCounter'
 
+
+import Formik from './Components/Formik/Formik';
+
 import { GlobalReducerContextProvider } from './Context/GlobalReducerContext';
 
 const initialState = { count : 0 }
@@ -39,7 +42,7 @@ function App() {
   return (
     <GlobalReducerContextProvider value = {{appState : appState , dispatch : dispatch}}>
       <div className="App">
-        <h2>App State count : {appState.count}</h2>
+        {/* <h2>App State count : {appState.count}</h2> */}
         {/* <UseStateHook /> */}
         {/* <DataFetching /> */}
       
@@ -51,9 +54,9 @@ function App() {
           </ChannelContextProvider>
 
         </UserProvider> */}
-        
-        <UseReducer />
 
+        {/* <UseReducer /> */}
+        <Formik />
       </div>
     </GlobalReducerContextProvider>
   );
