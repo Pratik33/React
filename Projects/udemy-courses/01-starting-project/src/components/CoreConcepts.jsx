@@ -1,3 +1,4 @@
+
 const CoreConcept = ({ image, title, description }) => {
     return (
         <li>
