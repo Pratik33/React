@@ -14,7 +14,7 @@ const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child-two" }, [
     React.createElement("h2", "", "Namaste Javascript"),
     React.createElement("p", "", "This is one of the best course for JS!"),
-  ])
+  ]),
 ]);
 
 root.render(parent);

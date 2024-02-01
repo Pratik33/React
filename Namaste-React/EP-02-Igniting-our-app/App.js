@@ -12,8 +12,8 @@ const parent = React.createElement("div", { id: "parent" }, [
     React.createElement("p", "", "This is one of the best course !"),
   ]),
   React.createElement("div", { id: "child-two" }, [
-    React.createElement("h2", "", "Namaste Javascript"),
-    React.createElement("p", "", "This is one of the best course for JS!"),
+    React.createElement("h2", "", "We are using parcel now !!"),
+    React.createElement("p", "", "Removed React CDN links and using React and react-DOM package "),
   ])
 ]);
 
